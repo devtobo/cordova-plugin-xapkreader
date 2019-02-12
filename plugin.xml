@@ -68,7 +68,7 @@
   <framework src="android-sdk/extras/google/play_apk_expansion/downloader_library" custom="true"/>
   <framework src="android-sdk/extras/google/play_licensing/library" custom="true" />
   
-  <config-file target="AndroidManifest.xml" parent="/manifest">
+  <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest" mode="merge">
    <!-- Required to download files from Google Play -->
    <uses-permission android:name="android.permission.INTERNET" />
    <!-- Required to keep CPU alive while downloading files (NOT to keep screen awake) -->
